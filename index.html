@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorias Eternas</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Fuente Kumbh Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;900&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kumbh Sans', sans-serif;
+            background-color: #1e4e49;
+            color: white;
+        }
+        /* Navbar fijo */
+        .navbar-fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav-wrapper {
+            background-color: #1e4e49;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-weight: 200;
+            margin-left: 9%;
+        }
+        /* Ajuste del logo */
+        .brand-logo {
+           position: absolute;
+           right: 20px;
+           margin-right: 160px; 
+        }
+        .brand-logo img {
+            height: 50px;
+            width: auto;
+        }
+        /* Hero */
+        .hero {
+            background: url(img/fondo\ hero.png) no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            padding-left: 1%;
+        }
+        .hero-content {
+            max-width: 600px;
+            text-align: left;
+            margin-left: 10%;
+            
+        }
+        .hero h1 {
+            font-weight: 900;
+            color: #e4c490;
+        }
+        .hero p {
+            font-weight: 200;
+            color: white;
+        }
+        .btn-custom {
+            background-color: #e4c490;
+            color: #1e4e49;
+            font-weight: bold;
+        }
+        /* Caja de Servicios */
+        .services-box {
+            background-color: rgba(228, 196, 144, 0.3);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+        }
+        /* Estilos para los íconos en los servicios */
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+        .material-icons {
+            font-size: 24px;
+            color: #e4c490;
+        }
+        /* Sección de Experiencia */
+        .experience {
+            background: url('experiencia.jpg') no-repeat center/cover;
+            padding: 50px;
+            text-align: left;
+        }
+        /* Reseñas */
+        .reviews {
+            padding: 50px;
+            text-align: center;
+        }
+        /* Formulario */
+        .contact-form {
+            padding: 50px;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+        /* Footer */
+        .footer {
+            background-color: #1e4e49;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="left nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a class="dropdown-trigger" href="#" data-target="servicios-dropdown">Servicios</a></li>
+                    <li><a href="#">Asesoría</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <a href="#" class="brand-logo"><img src="img/logo_Mesa de trabajo 1.png" alt="Logo"></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Dropdown de Servicios -->
+    <ul id="servicios-dropdown" class="dropdown-content">
+        <li><a href="#">Cremación Digna</a></li>
+        <li><a href="#">Ceremonias Personalizadas</a></li>
+        <li><a href="#">Asesoría Legal</a></li>
+        <li><a href="#">Apoyo Psicológico</a></li>
+        <li><a href="#">Gestión Documental</a></li>
+    </ul>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Acompañándote en los momentos más difíciles con respeto y calidez</h1>
+            <p>Ofrecemos un servicio integral para despedir a tus seres queridos con dignidad y tranquilidad</p>
+            <a href="#contacto" class="btn btn-custom">Solicitar atención inmediata</a>
+        </div>
+    </section>
+
+    <!-- Caja de Servicios con Íconos -->
+    <div class="services-box">
+        <div class="service-item">
+            <i class="material-icons">local_florist</i>
+            <span>Cremación Digna</span>
+        </div>
+        <div class="service-item">
+            <i class="material-icons">diversity_3</i>
+            <span>Ceremonias Personalizadas</span>
+        </div>
+        <div class="service-item">
+            <i class="material-icons">gavel</i>
+            <span>Asesoría Legal</span>
+        </div>
+        <div class="service-item">
+            <i class="material-icons">psychology</i>
+            <span>Apoyo Psicológico</span>
+        </div>
+        <div class="service-item">
+            <i class="material-icons">assignment</i>
+            <span>Gestión Documental</span>
+        </div>
+    </div>
+
+    <!-- Sección Experiencia -->
+    <section class="experience">
+        <h2>Más de 30 años brindando apoyo y tranquilidad</h2>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="reviews">
+        <h3>Reseñas</h3>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="contact-form">
+        <h2>Ayúdanos a contactarte</h2>
+        <input type="text" placeholder="Escribe tu nombre">
+        <input type="text" placeholder="Escribe tu número">
+        <textarea placeholder="Mensaje"></textarea>
+        <button class="btn btn-custom">Solicitar asesoría</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright - Derechos reservados</p>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(elems);
+        });
+    </script>
+</body>
+</html>
