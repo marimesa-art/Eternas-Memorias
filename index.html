@@ -96,34 +96,60 @@
             color: #e4c490;
         }
 
-        /* Sección de Cremación Digna */
-        .cremacion-digna {
-            padding: 50px 10%;
-        }
-        .left-content {
-            text-align: left;
-        }
-        .right-content {
-            display: flex;
-            justify-content: flex-end;
-            padding-left: 20px;
-        }
-        .cremacion-digna h2 {
-            font-weight: 900;
-            color: white;
-        }
-        .cremacion-digna p {
-            font-weight: 500;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-        .cremacion-img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
+        /* Estilos para Cremación Digna */
+.cremacion-digna {
+    padding: 50px 10%;
+}
+.cremacion-digna .left-content {
+    text-align: left;
+}
+.cremacion-digna .right-content {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+.cremacion-digna .cremacion-img {
+    width: 100%;
+    max-width: 400px;
+    
+}
 
+/* Estilos para Ceremonias Personalizadas */
+.ceremonias-personalizadas {
+    position: relative;
+    padding: 50px 10%;
+    background: url("img/fondo\ ceremonias.png") no-repeat center center/cover;
+}
+.ceremonias-personalizadas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+.ceremonias-personalizadas .container {
+    position: relative;
+    z-index: 1;
+}
+.ceremonias-personalizadas .left-content {
+    display: flex;
+    justify-content: flex-start;
+}
+.ceremonias-personalizadas .right-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+.ceremonias-personalizadas .ceremonia-img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -60px;
+    margin-top: 20px;
+}
         /* Estilos del Botón Ver Más */
         .btn-ver-mas {
             background-color: #e4c490;
@@ -141,35 +167,66 @@
             background-color: #d4b080;
         }
 
-        /* Sección de Experiencia */
-        .experience {
-            background: url('experiencia.jpg') no-repeat center/cover;
-            padding: 70px;
-            text-align: left;
-        }
-        /* Reseñas */
-        .reviews {
-            padding: 50px;
-            text-align: center;
-        }
-        /* Formulario */
-        .contact-form {
-            padding: 50px;
-            text-align: left;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
-        }
-        /* Footer */
-        .footer {
-            background-color: #1e4e49;
-            text-align: center;
-            padding: 20px;
-        }
+        /* Estilos para Asesoría legal */
+.asesoria-legal {
+    padding: 50px 10%;
+}
+.asesoria-legal .left-content {
+    text-align: left;
+}
+.asesoria-legal .right-content {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+.asesoria-legal .cremacion-img {
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+/* Estilos para Apoyo psicológico */
+.apoyo-psicologico {
+    position: relative;
+    padding: 50px 10%;
+    background-image: url("/img/fondo\ apoyo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.apoyo-psicologico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+.apoyo-psicologico .container {
+    position: relative;
+    z-index: 1;
+}
+.apoyo-psicologico .left-content {
+    display: flex;
+    justify-content: flex-start;
+}
+.apoyo-psicologico .right-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+.apoyo-psicologico .apoyo-img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -60px;
+    margin-top: 20px;
+}
+
+       
+        
     </style>
 </head>
 <body>
@@ -251,6 +308,59 @@
             </div>
         </div>
     </section>
+
+     <!-- Ceremonias Personalizadas -->
+     <section class="ceremonias-personalizadas">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 left-content">
+                    <img src="img/Ceremonias.png" alt="Ceremonias Personalizadas" class="responsive-img ceremonia-img">
+                </div>
+                <div class="col s12 m6 right-content">
+                    <h2>Ceremonias Personalizadas</h2>
+                    <p>Cada persona es única, y su despedida también debería serlo.
+                        Organizamos ceremonias adaptadas a las creencias y deseos de la familia, ofreciendo un espacio de homenaje y recuerdo.
+                    </p>
+                    <a href="#" class="btn btn-ver-mas">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asesoría legal -->
+    <section class="asesoria-legal">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 left-content">
+                    <h2>Asesoría Legal</h2>
+                    <p>Sabemos que los trámites legales pueden ser complejos en estos momento difíciles. Nuestro equipo de especialistas te guía en cada paso para que todo se realice de manera rápida y sin complicaciones.</p>
+                    <a href="#" class="btn btn-ver-mas">Ver Más</a>
+                </div>
+                <div class="col s12 m6 right-content">
+                    <img src="img/asesoria.png" alt="asesoria legal" class="responsive-img asesoria-legal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apoyo psicológico -->
+    <section class="apoyo-psicologico">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 left-content">
+                    <img src="img/apoyopsicologico.png" alt="apoyo psicologico" class="responsive-img apoyo-psicologico">
+                </div>
+                <div class="col s12 m6 right-content">
+                    <h2>Apoyo Psicológico</h2>
+                    <p>Perder a un ser querido es una experiendia difícil.
+                        Contamos con profesionales en psicología especializados en duelo, ofreciendo acompañamiento a individuos y familias para afrontar el proceso con serenidad.
+                    </p>
+                    <a href="#" class="btn btn-ver-mas">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
